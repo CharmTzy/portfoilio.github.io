@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <!-- Image Credit
+  looka Logo creator from Google
+  SP photo from Education Website -->
+
+  <head>
+    <meta charset="utf-8" />
+    <title>DIT🤩</title>
+    <!-- Icon for webiste 16x16 -->
+    <link rel="shortcut icon" href="./Graphics/Home/icon.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Bootstrap link to place items -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class="navbar-brand">
+          <a
+            href="https://www.tiktok.com/@charmtzy?_t=8UWC2dqoBMo&_r=1"
+            target="_blank"
+            class="home-link"
+          >
+            <img src="./Graphics/Home/logo.png" class="logo" alt="logo"/>
+          </a>
+          <button onclick="switch_theme('dark')" class="btn btn-light" id="mode">
+            <i class="fas fa-moon"></i>&nbsp;Dark Mode
+          </button>
+        </div>
+        <!-- toggle navbar button in the mobile view-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColor01"
+          aria-controls="navbarColor01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- nav elements in the toggle navbar and toggle navbar show them after clicking -->
+        <div class="collapse navbar-collapse" id="navbarColor01" style="margin-left: 1cm">
+          <!--nav-link hyperlink to the next pages after clicking-->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html" aria-current="page">
+                <i class="fas fa-home"></i>&nbsp;Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./about.html">
+                <i class="fas fa-address-card"></i>&nbsp;About Course
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./BeforeSP.html"> <i class="fas fa-school fa-1px"></i>&nbsp;Before SP </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./SPexp.html">
+                <i class="fas fa-book"></i>&nbsp;SP Experience
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./feedback.html">
+                <i class="fas fa-comment-alt"></i>&nbsp;Feedback
+              </a>
+            </li>
+          </ul>
+
+          <!-- Search Bar in Navigation bar-->
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              id="query"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="button" onclick="google()">Search</button>
+          </form>
+              <!-- Clock in Navigation Bar -->
+              <div class="main">
+                <div class="clockContainer">
+                <p id="date"></p>
+                <p id="time"></p>
+                <span id="hours" class="clockpart"></span>
+                <span id="colon1" class="clockmin"></span>
+                <span id="minutes" class="clockpart"></span>
+                <span id="colon2" class="clockmin"> </span>
+                <span id="seconds" class="clockpart"></span>
+                <span id="ampm" class="clockpart"></span>
+                </div>
+                </div>
+
+        </div>
+      </div>
+    </nav>
+    <!--End of  navigation bar -->
+
+<!-- page image -->
+    <img src="./Graphics/about/img1.jpg" class="img-fluid" alt="DIT">
+
+    <!-- About Course with youtube video  -->
+    <div class="container-fluid DIT text-md-center pb-3">
+        <h2 ><strong>About Diploma in Information & Technology</strong></h2>
+        <p  style="font-size:24px ">Information Technology (S69) is the driving force behind many
+        digital transformations we see and use today, including the Smart Nation vision.DIT is one
+        of the full-time diploma courses under
+        <a href="https://www.sp.edu.sg/soc" target="_blank" style="color: black">
+        <strong>School of Computing(SOC).</strong></a>
+        In Singapore, there continues to be a strong demand for IT professionals in Software 
+        Development and User Experience (UX) design, and in Immersive Simulation Technologies 
+        such as Augmented and Virtual Reality.</p>
+        <!--  YouTube Video -->
+        <iframe  width="500" height="345" src="https://youtube.com/embed/0rhYZijahk8">
+        </iframe>
+      </div>
+    <!-- End of about course -->
+
+    <!-- course highlight -->
+    <div class="container-fluid course-high text-center p-3">
+      <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+      <div class="row">
+        <div class=" col">
+          <img src="./Graphics/about/img2.png" alt="Course Highlight">
+        </div>
+        <div class="col">
+          <p class="high-words" style="font-size:24px">In term 1 of semester 1 , students have to teach
+          fundamental modules of programming,computing,mathematics and side modules of critical thinking
+          and communication project and education & career guide.However,every students in DIT have to
+          choose 3 elective modules<strong>(Software Development,User Experience Design,Immersive 
+          Simulation Technology)</strong> before the end of term 1 so that in term 2,they get their 
+          specialization that they want.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- cover for School Brochure -->
+    <div class="container-fluid Brochure text-center p-3">
+      <div class="row">
+        <div class="col-md-8 p-3 ">
+          <p style="font-size:24px">
+          <strong>Click on the image to download the School Brochure:
+        </strong>
+        </p>
+        <p style="font-size:24px">
+        Want to know more about DIT?
+        <a href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/information-technology" target="_blank">Click </a> here to find out more
+        </p>
+
+
+        </div>
+        <div class="col-6 col-md-4 p-3">
+        <a href="https://www-sp-edu-sg-admin.cwp.sg/docs/default-source/publications/academic-brochures/250322_web_schoolbrochure_soc.pdf" target="_blank">
+          <img  src="./Graphics/about/cover.jpg" alt="School Brochure">
+        </a>
+        </div>
+      </div>
+    </div> 
+
+    <!-- Career Prospect -->
+    <div class="container-fluid career text-center p-3">
+      <h2>My Career Prospect</h2>
+      <div class="row">
+        <div class="col-sm-4 GameDev">
+          <img  src="./Graphics/about/career2.jpg" alt="Game Development">
+          <h4>Game developer</h4>
+          <p>I want to become game developer as I'm creative.I spent most of my time playing games so that I have knowledge and become creative
+            for coding games.</p>
+        </div>
+
+        <div class="col-sm-4 Data">
+          <img src="./Graphics/about/career3.jpg" alt="Data Analyst">
+          <h4>Data Analyst</h4>
+          <p>I'm quite sure that this career would be tough and challenging but I'm the one who is willing to deal with difficulties.Everone is 
+            born to fight.I like challenges so that I'm quite interested in it.
+          </p>
+        </div>
+
+        <div class="col-sm-4 Soft">
+          <img src="./Graphics/about/career1.jpg" alt="Software Developer">
+          <h4>Software Developer</h4>
+          <p>Software developers use programming and design knowledge to build software that meets the needs of users and clients.
+          </p>
+        </div>
+
+      </div>
+    </div>
+<!-- Footer -->
+    <footer>
+      <div class="container-fluid p-0">
+        <div class="row text-left">
+          <div class="col-md-5 col-sm-5">
+            <p>Copyright ©2022 All rights reserved | This website is made by
+              <span> Wai Yan Aung</span>
+            </p>
+          </div>
+
+          <div class="col-md-2 col-sm-12">
+            <h4 class="text-light">Contact Me </h4>
+            <div class="column text-light">
+              <a href="https://www.facebook.com/profile.php?id=100025060720474" class="bi bi-facebook" target="_blank"></a>
+              <a href="https://www.instagram.com/stay_free04/" class="bi bi-instagram" target="_blank"></a>
+              <a href="https://wa.me/6588779884?text=" class="bi bi-whatsapp" target="_blank"></a>
+              <a href="mailto:WAIYAN.22@ichat.sp.edu.sg" class="bi bi-envelope" target="_blank"></a>
+            </div>
+          </div>
+
+  <!-- Progress bar -->  
+          <div class="col-md-4 col-sm-12">
+            <h5 class="text-light">Overall Website Components</h5>
+            <p>Javascript</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div>
+            </div>
+            <p>CSS</p>
+            <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">35%</div>
+            </div>
+            <p>HTML</p>
+            <div class="progress">
+              <div class="progress-bar bg-info" role="progressbar" aria-label="Info example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+      <!-- End of Progress bar -->  
+<!-- End of footer  -->
+
+  <button onclick="scrollToTop()" class="btn rounded-circle btn-outline-info scrollToTop"><i class="fas fa-arrow-circle-up"></i></button>
+    <script src="./javascript/index.js"></script>
+    
+    </body>
+    </html>

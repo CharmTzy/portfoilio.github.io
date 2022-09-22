@@ -1,0 +1,663 @@
+@charset "utf-8";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: montserrat;
+  overflow-x: hidden;
+}
+
+/* Table of content for index.html page
+  1.Navigation Bar
+  2.Intro Photo Large
+  3.Intro Photo Writing
+  4.Interest Cards
+  5.Value Cards
+  6.Game
+  7.Footer
+  8.scroll bar
+  9.Back to top button*/
+
+  /* ============
+    Navigation Bar
+   ============ */
+.home-link {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.home-link:hover {
+  background-color: transparent;
+}
+
+.logo {
+  width: 60px;
+  cursor: pointer;
+}
+
+.nav-item a {
+  width: max-content;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.nav-item a:hover {
+  background: #1b9bff;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.switch {
+  display: inline;
+  position: relative;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* clock */
+.main {
+  height: 10vh !important;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  padding: 20px;
+  color:black;
+  }
+  
+  .main div {
+  border-radius: 0px;
+  background: #fff;
+  width: 60%;
+  max-width: 450px;
+  height: auto;
+  position: relative;
+  border: 1px white solid;
+  text-align: center;
+  font-size: 18px;
+  }
+
+  .clockpart{
+  padding:0px !important;
+  min-width:10px !important;
+  display: inline-block;
+  }
+  .clockmin{
+  padding:0px !important;
+  width:5px !important;
+  min-width:5px !important;
+  display: inline-block;
+  }
+
+
+/* search  */
+.search-btn {
+  float: right;
+}
+
+/* intro css */
+.intro1{
+  font-size: 40px;
+}
+
+.introX{
+  width:100%;
+  height:300px;
+  background:linear-gradient(to right,rgb(72, 72, 167), rgb(190, 178, 233), rgb(42, 42, 110));
+}
+
+ /* ============
+    Intro Photo Large
+   ============ */ 
+.introphoto img {
+  width: 100%;
+}
+
+/* ============
+    Intro Photo and Writing
+   ============ */
+.grid-1 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 50px;
+  justify-content: center;
+}
+
+.grid-1 {
+  padding-top: 80px;
+}
+
+.photo img {
+  margin-top: 10px;
+  width: 140px;
+  height: 140px;
+  border-radius: 70%;
+  margin: 20px;
+  float: left;
+}
+
+.intro {
+  margin-top: 10px;
+  text-align: justify;
+}
+
+/* ============
+    Interest cards
+   ============ */
+
+/* heading of the interest cards */
+header {
+  background: rgba(218, 111, 4, 0.555);
+  display: flex;
+  color: white;
+}
+header:before,
+header:after {
+  content: "";
+  margin: auto 1em;
+  border-bottom: solid 1px;
+  flex: 1;
+}
+h1 {
+  position: relative;
+  padding: 0.25em 1em;
+  overflow: hidden;
+  background: linear-gradient(white, white) no-repeat top center,
+    linear-gradient(white, white) no-repeat bottom center;
+  background-size: calc(100% - 1.7em) 1px;
+
+}
+h1:before,
+h1:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: solid 1px;
+  border-top: none;
+  border-bottom: none;
+  transform: skew(45deg);
+}
+h1:after {
+  transform: skew(-45deg);
+}
+
+/*Interst Cards Styling */
+.h1 {
+  padding: top 10px;
+}
+
+.d-flex {
+  width: 80%;
+  margin-left: 37px;
+}
+
+.interestsContent .card {
+  box-shadow: -3px 3px 3px 2px rgba(0, 0, 0, 20%), 3px 3px 3px 2px rgba(0, 0, 0, 20%);
+  padding: 0;
+  border-radius: 20px;
+}
+.card1:hover{
+  transform: scale(1.1);
+}
+.card-text{
+  font-size: 20px;
+}
+/* adjusting the size,position and box shadow of img-card */
+.img-comp-container {
+  position: relative;
+  height: 200px;
+  width: 260px;
+  box-shadow: 8px 8px 29px -9px rgba(0, 0, 0, 0.67);
+  border-radius: 25px;
+}
+/* overlap the image1 with same size */
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+  border-radius: 25px;
+}
+
+.change_img {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+
+
+/* ============
+    Value cards
+   ============ */
+
+.myvalue{
+text-align:center;
+}
+
+.cover {
+  width: 100%;
+  height: 55vmin;
+  background: url("../Graphics/Home/value.jpg");
+  background-position: -24rem -19rem;
+  background-size: 150%;
+  position: relative;
+}
+
+.cover .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.cover .content {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding-top: 19vmin;
+}
+
+.cover .content > h2 {
+  font-family: var(--Patua);
+  font-size: 6vmin;
+  color: whitesmoke;
+}
+
+.rect:hover{
+  transform: scale(1.1); 
+}
+.numbers .rect {
+  position: relative;
+  z-index: 1;
+  background: white;
+  color:black;
+  width: 17rem;
+  height: 12rem;
+  padding-top: 3.5vmin;
+  margin: 1rem;
+  border-radius: 0.5em;
+  box-shadow: 1px 2px 50px 0px rgba(255, 0, 0, 0.349);
+}
+
+.numbers {
+  margin-top: -15vmin;
+}
+
+.numbers .rect h1 {
+  font-size: 5rem;
+  color: tomato;
+}
+
+
+/* ============
+    Personalities
+   ============ */
+
+   .section {
+    background: var(--bggradient);
+  }
+
+  .section img{
+    width:50%;
+  }
+  
+  .section .col-md-12 > p {
+    padding: 0 4em;
+    padding-bottom: 2em;
+    color: var(--light-gray);
+    font-size: 3vmin;
+  }
+  /* font name and background color for whole page */
+  :root {
+    --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+    --light-gray: rgba(255, 255, 255, 0.877);
+  }
+
+
+/* ============
+    Footer
+   ============ */
+
+footer {
+  background: rgba(5, 5, 5, 0.815);
+  overflow-x: hidden;
+  padding: 2vmin 4vmin;
+}
+footer p{
+  color:white;
+}
+footer p > span {
+  color: #f8320a;
+}
+
+footer input {
+  border: none !important;
+}
+
+footer input::placeholder {
+  color: white !important;
+}
+
+footer .input-group .input-group-text {
+  background: var(--bggradient);
+  border: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(111, 45, 45, 0.815);
+  z-index: 9999;
+  transition: all 1.5s ease;
+}
+
+  /* ============
+   Scroll Bar
+   ============ */
+::-webkit-scrollbar{
+  width:15px;
+}
+::-webkit-scrollbar-track{
+  box-shadow:inset 0 0 2px grey;
+  border-radius:10px;
+}
+::-webkit-scrollbar-thumb{
+  background: rgb(133,26,232);
+  background:linear-gradient(180deg,rgba(133,26,232,1)15%,rgba(42,0,255,1)84%);
+  border-radius:10px;
+}
+
+/* Table of content for about.html
+1.career css
+2.DIT */
+
+/*  ============
+ career css
+  ============ */
+  .career{
+    font-size: 20px;
+    background:linear-gradient(to right,rgb(154, 137, 250),rgb(219, 210, 210),rgb(237, 250, 166));
+  }
+
+  .GameDev img{
+    width:400px;
+    height:300px;
+    border:solid 4px rgb(250, 246, 246)
+  }
+  .Data img{
+    width:400px;
+    height:300px;
+    border:solid 4px rgb(250, 246, 246)
+  }
+  .Soft img{
+    width:400px;
+    height:300px;
+    border:solid 4px rgb(250, 246, 246)
+  }
+
+  .DIT{
+    background: #ee6055;
+  }
+  .course-high{
+    background-color: rgb(111, 243, 111);
+  }
+  .detail{
+    background-color: #f52111;
+  }
+  
+/* Table of content for BeforeSP.html
+1.img of sch life
+2.certificates
+3.Friend
+4.Free time 
+ */
+
+/*  ============
+ img of past school
+  ============ */
+  .schlife{
+    background:linear-gradient(to right,rgb(61, 195, 233), rgb(219, 213, 240), rgb(102, 160, 99));
+  }
+  .school{
+    font-size:20px;
+  }
+  .pastschool1 img{
+    border:5px solid white;
+  }
+  .pastschool2 img{
+    width:220px;
+    height:140px;
+    border:5px solid white;
+  }
+
+  /*  ============
+  Certificates
+  ============ */
+
+  .card-title{
+    font-size:20px;
+  }
+  .card-body{
+    background:linear-gradient(to right,rgb(138, 240, 144), rgb(170, 165, 190), rgb(234, 220, 233));
+  }
+
+  /*  ============
+  Friend
+  ============ */
+  .friend{
+    background:linear-gradient(to right,rgb(241, 228, 177), rgb(239, 197, 197), rgb(172, 221, 241));
+  }
+
+  .friend img{
+    width: 200px;
+    height:200px;
+    border:solid 3px rgb(40, 38, 38);
+  }
+
+  .friendT{
+    font-size:20px;
+  }
+
+    /*  ============
+  Free time
+  ============ */
+  .stay-free img{
+    width:300px;
+    height:200px;
+    border: solid 3px rgb(165, 114, 253);
+  }
+  .stay-free p{
+    font-size: 20px;
+  }
+
+
+/* Table of content for SPexp.html
+1.Reason why I joined SP css
+2.CCA
+2.Table
+ */
+
+  /* ============
+  Reason why I joined SP css
+   ============ */
+   .item1{
+    border:5px solid white;
+    margin-top:30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+   }
+   .item2{
+    padding: 80px 80px;
+    font-size: 20px;
+  }
+  .grid-container{
+    animation-name: grid-container;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+   }
+
+   @keyframes grid-container {
+    0% {
+      background: #ee6055;
+    }
+    25% {
+      background: #60d394;
+    }
+    50% {
+      background: #aaf683;
+    }
+    75% {
+      background: #ffd97d;
+    }
+    100% {
+      background: #ff9b85;
+    }
+  }
+
+   /* ============
+      CCA
+   ============ */
+
+
+    .CCA{
+      background: linear-gradient(#e66465, #9198e5);
+    }
+   .circle-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 70%;
+   }
+
+  /* ============
+  Table
+   ============ */
+
+   .table-responsive-sm{grid-area: table; }
+   .words{
+    grid-area:words;
+    margin: auto;
+    font-size: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+   .grid-container1 {
+    display: grid;
+    grid-template-areas:'words table table table ';
+    background:linear-gradient(to right,rgb(186, 184, 220), rgb(202, 106, 106), rgb(130, 148, 91));
+   }
+
+   .td{
+    text-align:center;
+    }
+
+
+/* Table of content of feedback.html
+  1.Feedback form stars
+  2.Feedback form
+   */
+
+  /* ============
+  Feedback form stars
+   ============ */
+
+  .rate {
+      float:left;
+      height: 46px;
+      padding: 100 10px;
+  }
+  .rate:not(:checked) > input {
+      position:absolute;
+      top:-9999px;
+  }
+  .rate:not(:checked) > label {
+      float:right;
+      width:1em;
+      overflow:hidden;
+      white-space:nowrap;
+      cursor:pointer;
+      font-size:30px;
+      color:#ccc;
+  }
+  .rate:not(:checked) > label:before {
+      content: '★ ';
+  }
+  .rate > input:checked ~ label {
+      color: rgb(23, 23, 240);    
+  }
+  .rate:not(:checked) > label:hover,
+  .rate:not(:checked) > label:hover ~ label {
+      color: rgb(86, 86, 235);  
+  }
+  .rate > input:checked + label:hover,
+  .rate > input:checked + label:hover ~ label,
+  .rate > input:checked ~ label:hover,
+  .rate > input:checked ~ label:hover ~ label,
+  .rate > label:hover ~ input:checked ~ label {
+      color: rgb(55, 55, 239);
+  }
+
+    /* ============
+  Feedback form
+   ============ */
+  .form{
+    background: linear-gradient(to right,rgb(191, 207, 228),rgb(243, 255, 246))
+    
+  }
+  /* ============
+  scroll to top button in every page
+   ============ */
+   
+  .scrollToTop {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    user-select: none;
+    position: fixed;
+    bottom: 30px; 
+    right: 30px;
+  }
+
+  @media only screen and (max-width: 600px) and (min-width: 481px) {
+    html, body {
+      overflow-x: hidden;
+    }
+    .grid-container1 {
+      display: block;
+      grid-template-areas:'table table table table';
+   }
+    .table-responsive-sm {
+      width: 100%;
+    }
+    .words{
+      margin-left: none;
+      margin-right: none;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    html, body {
+      overflow-x: hidden;
+    }
+  }
